@@ -1,0 +1,60 @@
+
+<html>
+<head>
+<title>CounterJS</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="counter.js"></script>
+<script>
+$(document).ready(function() {
+
+$('#counter1').counter({limit: 500, speed: 10000});
+});
+</script>
+<style type="text/css">
+body
+{
+background: none repeat scroll 0 0 #2C2C2C;
+font-family: arial,verdana,tahoma;
+font-weight: 700;
+text-align: center;
+}
+.count
+{
+margin: auto;
+font-size: 5em;;
+margin-top: 20%;
+color: #6C6C6C;
+font-size: 5em;
+}
+.header
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding-top: 5%;
+color: #dcdcdc;
+font-size: 10em;
+}
+.footer
+{
+position: absolute;
+padding-bottom: 2%;
+text-align: center;
+bottom: 0;
+}
+.footer a
+{
+color: #208abd;
+font-size: 1em;
+}
+</style>
+</head>
+<body>
+<div class="header">CounterJS</div>
+<div class="count">
+<span id="counter1"></span> +<br>
+Count
+</div>
+</body>
+</html>
